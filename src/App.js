@@ -1,19 +1,5 @@
 import React, { useState } from "react";
-import {
-  ChevronRight,
-  Download,
-  ExternalLink,
-  FileText,
-  BarChart3,
-  Database,
-  Grid3x3,
-  User,
-  Mail,
-  Phone,
-  MapPin,
-  Calendar,
-  Eye,
-} from "lucide-react";
+import { ChevronRight, Download, ExternalLink, FileText, BarChart3, Database, Grid3x3, User, Mail, Phone, MapPin, Eye } from 'lucide-react';
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -480,10 +466,10 @@ const Portfolio = () => {
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <MapPin className="w-8 h-8 text-blue-600 mx-auto mb-4" />
               <h3 className="font-semibold mb-2">Location</h3>
-              <p className="text-gray-600">University City, State</p>
+              <p className="text-gray-600">Wilsonville, OR</p>
             </div>
           </div>
-        </div>
+        </div> 
       </section>
 
       {/* Footer */}
