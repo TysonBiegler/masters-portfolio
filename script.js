@@ -19,7 +19,7 @@ const projects = [
     icon: "📄",
   },
   {
-    id: 2,
+    id: 2, //https://public.tableau.com/views/Dashboard_D210_v2/ExecutiveDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
     title: "Financial Data Analysis Dashboard",
     category: "tableau",
     type: "Data Visualization",
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Initialize Lucide icons
-  if (typeof lucide !== 'undefined') {
+  if (typeof lucide !== "undefined") {
     lucide.createIcons();
   }
 
@@ -241,14 +241,16 @@ function renderProjects() {
       ? projects
       : projects.filter((project) => project.category === selectedCategory);
 
-  console.log(`Rendering ${filteredProjects.length} projects for category: ${selectedCategory}`);
+  console.log(
+    `Rendering ${filteredProjects.length} projects for category: ${selectedCategory}`
+  );
 
   projectsGrid.innerHTML = filteredProjects
     .map((project) => createProjectCard(project))
     .join("");
 
   // Re-initialize Lucide icons for new content
-  if (typeof lucide !== 'undefined') {
+  if (typeof lucide !== "undefined") {
     lucide.createIcons();
   }
 
@@ -306,8 +308,7 @@ function createProjectCard(project) {
           <div class="highlights-grid">
             ${project.highlights
               .map(
-                (highlight) =>
-                  `<span class="highlight-tag">${highlight}</span>`
+                (highlight) => `<span class="highlight-tag">${highlight}</span>`
               )
               .join("")}
           </div>
@@ -317,9 +318,7 @@ function createProjectCard(project) {
           <div class="preview-label">Tools Used:</div>
           <div class="tools-grid">
             ${project.tools
-              .map(
-                (tool) => `<span class="tool-tag">${tool}</span>`
-              )
+              .map((tool) => `<span class="tool-tag">${tool}</span>`)
               .join("")}
           </div>
         </div>
@@ -391,7 +390,7 @@ function openModal(projectId) {
   }
 
   // Re-initialize Lucide icons
-  if (typeof lucide !== 'undefined') {
+  if (typeof lucide !== "undefined") {
     lucide.createIcons();
   }
 }
