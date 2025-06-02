@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-C0P8KBT2RW"
@@ -18,18 +17,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Master's Degree Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="header-content">
         <div class="header-left">
           <div class="header-icon">
+            <img class="header-icon" src="/Files/logo.png" />
             <i data-lucide="user"></i>
           </div>
           <div class="header-info">
@@ -45,11 +44,12 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ############## PROJECT START #################-->
+
     <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title">
-          Academic Excellence in
+          Master of Science in
           <span class="hero-highlight">Data Analytics</span>
         </h1>
         <p class="hero-description">
@@ -68,57 +68,717 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects-section">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Academic Projects</h2>
           <p class="section-description">
-            A comprehensive collection of coursework demonstrating technical
-            expertise
+            A comprehensive collection of coursework throughout my program.
           </p>
         </div>
 
-        <!-- Category Filter -->
         <div class="category-filter" id="categoryFilter">
           <button class="filter-btn active" data-category="all">
             <i data-lucide="grid-3x3"></i>
             All Projects
           </button>
-          <button class="filter-btn" data-category="pdf">
-            <i data-lucide="file-text"></i>
-            Research Papers
-          </button>
-          <button class="filter-btn" data-category="tableau">
-            <i data-lucide="bar-chart-3"></i>
-            Dashboards
-          </button>
           <button class="filter-btn" data-category="sql">
             <i data-lucide="database"></i>
-            Database Projects
+            SQL & Databases
           </button>
-          <button class="filter-btn" data-category="spreadsheet">
-            <i data-lucide="table"></i>
-            Data Analysis
+          <button class="filter-btn" data-category="r_statistics">
+            <i data-lucide="bar-chart-2"></i>
+            R Programming
+          </button>
+          <button class="filter-btn" data-category="machine_learning">
+            <i data-lucide="brain"></i>
+            Python
+          </button>
+          <button class="filter-btn" data-category="tableau_bi">
+            <i data-lucide="layout-dashboard"></i>
+            Data Viz & BI (Tableau)
+          </button>
+          <button class="filter-btn" data-category="foundations">
+            <i data-lucide="book-open"></i>
+            Machine Learning
           </button>
         </div>
 
-        <!-- Projects Grid -->
         <div class="projects-grid" id="projectsGrid">
-          <!-- Projects will be dynamically inserted here -->
+          <div class="project-card" data-category="sql" data-id="4">
+            <!-- ########## PROJECT START ########## -->
+            <div class="project-card-content">
+              <div class="project-header">
+                <div class="project-info">
+                  <h3 class="project-title">Data Acquisition - D205</h3>
+                  <div class="project-meta">
+                    <span class="project-type">Database Project</span>
+                    <span class="project-date">2024</span>
+                  </div>
+                </div>
+                <div class="project-icon">🗄️</div>
+              </div>
+              <p class="project-description">
+                Designed and implemented a database for efficient data
+                acquisition, focusing on PostgreSQL, data modeling, and robust
+                query construction for various data sources.
+              </p>
+              <div class="preview-section">
+                <div class="preview-label">Preview:</div>
+                <div class="preview-content">
+                  💾 Database Design • 🔗 Data Integration • ⚡ Efficient
+                  Queries
+                </div>
+              </div>
+              <div class="highlights-section">
+                <div class="preview-label">Key Highlights:</div>
+                <div class="highlights-grid">
+                  <span class="highlight-tag">Normalized database schema</span>
+                  <span class="highlight-tag"
+                    >Optimized data extraction scripts</span
+                  >
+                  <span class="highlight-tag">Ensured data integrity</span>
+                </div>
+              </div>
+              <div class="tools-section">
+                <div class="preview-label">Tools Used:</div>
+                <div class="tools-grid">
+                  <span class="tool-tag">PostgreSQL</span>
+                  <span class="tool-tag">SQL</span>
+                  <span class="tool-tag">Database Design</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-view" data-project-id="4">
+                  <i data-lucide="eye"></i>
+                  View Details
+                </button>
+                <button class="btn btn-sm btn-download">
+                  <i data-lucide="download"></i>
+                  GitHub Repo
+                </button>
+                <button class="btn btn-sm btn-external" style="display: none">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ########## PROJECT END ########## -->
+
+          <div class="project-card" data-category="r_statistics" data-id="5">
+            <!-- ########## PROJECT START ########## -->
+            <div class="project-card-content">
+              <div class="project-header">
+                <div class="project-info">
+                  <h3 class="project-title">Data Cleaning - D206</h3>
+                  <div class="project-meta">
+                    <span class="project-type"
+                      >Data Preprocessing & Analysis</span
+                    >
+                    <span class="project-date">2024</span>
+                  </div>
+                </div>
+                <div class="project-icon">🧼</div>
+              </div>
+              <p class="project-description">
+                Addressed real-world data quality issues using SQL and R,
+                including handling missing values, outliers, and
+                inconsistencies. Applied Principal Component Analysis (PCA) for
+                dimensionality reduction.
+              </p>
+              <div class="preview-section">
+                <div class="preview-label">Preview:</div>
+                <div class="preview-content">
+                  🧹 Data Transformation • 📉 Dimensionality Reduction • ✨ Data
+                  Quality
+                </div>
+              </div>
+              <div class="highlights-section">
+                <div class="preview-label">Key Highlights:</div>
+                <div class="highlights-grid">
+                  <span class="highlight-tag"
+                    >Improved data accuracy by 20%</span
+                  >
+                  <span class="highlight-tag"
+                    >Identified key data inconsistencies</span
+                  >
+                  <span class="highlight-tag"
+                    >Enhanced model performance through clean data</span
+                  >
+                </div>
+              </div>
+              <div class="tools-section">
+                <div class="preview-label">Tools Used:</div>
+                <div class="tools-grid">
+                  <span class="tool-tag">SQL</span>
+                  <span class="tool-tag">R</span>
+                  <span class="tool-tag">PCA</span>
+                  <span class="tool-tag">Data Transformation</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-view" data-project-id="5">
+                  <i data-lucide="eye"></i>
+                  View Details
+                </button>
+                <button class="btn btn-sm btn-download">
+                  <i data-lucide="download"></i>
+                  GitHub Repo
+                </button>
+                <button class="btn btn-sm btn-external" style="display: none">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ########## PROJECT END ########## -->
+          <div class="project-card" data-category="r_statistics" data-id="6">
+            <!-- ########## PROJECT START ########## -->
+
+            <div class="project-card-content">
+              <div class="project-header">
+                <div class="project-info">
+                  <h3 class="project-title">
+                    Exploratory Data Analysis - D207
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-type">Statistical Analysis</span>
+                    <span class="project-date">2024</span>
+                  </div>
+                </div>
+                <div class="project-icon">🔎</div>
+              </div>
+              <p class="project-description">
+                Conducted in-depth exploratory data analysis using R, applying
+                parametric tests like ANOVA, Chi-Square, and T-tests to uncover
+                significant patterns and relationships within datasets.
+              </p>
+              <div class="preview-section">
+                <div class="preview-label">Preview:</div>
+                <div class="preview-content">
+                  📈 Statistical Inference • 📊 Data Patterns • 🔍 Hypothesis
+                  Testing
+                </div>
+              </div>
+              <div class="highlights-section">
+                <div class="preview-label">Key Highlights:</div>
+                <div class="highlights-grid">
+                  <span class="highlight-tag"
+                    >Identified statistically significant relationships</span
+                  >
+                  <span class="highlight-tag"
+                    >Generated insightful visualizations</span
+                  >
+                  <span class="highlight-tag"
+                    >Informed subsequent predictive modeling</span
+                  >
+                </div>
+              </div>
+              <div class="tools-section">
+                <div class="preview-label">Tools Used:</div>
+                <div class="tools-grid">
+                  <span class="tool-tag">R</span>
+                  <span class="tool-tag">Statistical Testing</span>
+                  <span class="tool-tag">Data Visualization</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-view" data-project-id="6">
+                  <i data-lucide="eye"></i>
+                  View Details
+                </button>
+                <button class="btn btn-sm btn-download">
+                  <i data-lucide="download"></i>
+                  GitHub Repo
+                </button>
+                <button class="btn btn-sm btn-external" style="display: none">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ########## PROJECT END ########## -->
+          <div
+            class="project-card"
+            data-category="machine_learning"
+            data-id="7"
+          >
+            <!-- ########## PROJECT START ########## -->
+
+            <div class="project-card-content">
+              <div class="project-header">
+                <div class="project-info">
+                  <h3 class="project-title">Predictive Modeling – D208</h3>
+                  <div class="project-meta">
+                    <span class="project-type"
+                      >Machine Learning Model Development</span
+                    >
+                    <span class="project-date">2024</span>
+                  </div>
+                </div>
+                <div class="project-icon">🧠</div>
+              </div>
+              <p class="project-description">
+                Developed and evaluated predictive models using Linear and
+                Logistic Regression. Focused on model selection, training,
+                validation, and interpreting performance metrics.
+              </p>
+              <div class="preview-section">
+                <div class="preview-label">Preview:</div>
+                <div class="preview-content">
+                  🤖 Predictive Analytics • 🎯 Model Evaluation • 📊 Performance
+                  Metrics
+                </div>
+              </div>
+              <div class="highlights-section">
+                <div class="preview-label">Key Highlights:</div>
+                <div class="highlights-grid">
+                  <span class="highlight-tag"
+                    >Achieved high prediction accuracy</span
+                  >
+                  <span class="highlight-tag"
+                    >Robust model validation techniques</span
+                  >
+                  <span class="highlight-tag"
+                    >Insights into feature importance</span
+                  >
+                </div>
+              </div>
+              <div class="tools-section">
+                <div class="preview-label">Tools Used:</div>
+                <div class="tools-grid">
+                  <span class="tool-tag">Python</span>
+                  <span class="tool-tag">Scikit-learn</span>
+                  <span class="tool-tag">Linear Regression</span>
+                  <span class="tool-tag">Logistic Regression</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-view" data-project-id="7">
+                  <i data-lucide="eye"></i>
+                  View Details
+                </button>
+                <button class="btn btn-sm btn-download">
+                  <i data-lucide="download"></i>
+                  GitHub Repo
+                </button>
+                <button class="btn btn-sm btn-external" style="display: none">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ########## PROJECT END ########## -->
+          <div
+            class="project-card"
+            data-category="machine_learning"
+            data-id="8"
+          >
+            <!-- ########## PROJECT START ########## -->
+
+            <div class="project-card-content">
+              <div class="project-header">
+                <div class="project-info">
+                  <h3 class="project-title">Data Mining 1 - D209</h3>
+                  <div class="project-meta">
+                    <span class="project-type"
+                      >Classification & Clustering</span
+                    >
+                    <span class="project-date">2024</span>
+                  </div>
+                </div>
+                <div class="project-icon">⛏️</div>
+              </div>
+              <p class="project-description">
+                Implemented k-Nearest Neighbor and Decision Tree algorithms for
+                classification and explored their application in data mining.
+                Focused on understanding model behavior and tuning.
+              </p>
+              <div class="preview-section">
+                <div class="preview-label">Preview:</div>
+                <div class="preview-content">
+                  🌳 Classification Models • 🌲 Decision Trees • 🤝 k-Nearest
+                  Neighbor
+                </div>
+              </div>
+              <div class="highlights-section">
+                <div class="preview-label">Key Highlights:</div>
+                <div class="highlights-grid">
+                  <span class="highlight-tag"
+                    >Built effective classification models</span
+                  >
+                  <span class="highlight-tag"
+                    >Compared model performance across algorithms</span
+                  >
+                  <span class="highlight-tag"
+                    >Understood algorithmic strengths and weaknesses</span
+                  >
+                </div>
+              </div>
+              <div class="tools-section">
+                <div class="preview-label">Tools Used:</div>
+                <div class="tools-grid">
+                  <span class="tool-tag">Python</span>
+                  <span class="tool-tag">Scikit-learn</span>
+                  <span class="tool-tag">k-NN</span>
+                  <span class="tool-tag">Decision Trees</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-view" data-project-id="8">
+                  <i data-lucide="eye"></i>
+                  View Details
+                </button>
+                <button class="btn btn-sm btn-download">
+                  <i data-lucide="download"></i>
+                  GitHub Repo
+                </button>
+                <button class="btn btn-sm btn-external" style="display: none">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ########## PROJECT END ########## -->
+          <div class="project-card" data-category="tableau_bi" data-id="9">
+            <!-- ########## PROJECT START ########## -->
+
+            <div class="project-card-content">
+              <div class="project-header">
+                <div class="project-info">
+                  <h3 class="project-title">
+                    Representation and Reporting - D210
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-type">Data Visualization & BI</span>
+                    <span class="project-date">2024</span>
+                  </div>
+                </div>
+                <div class="project-icon">📈</div>
+              </div>
+              <p class="project-description">
+                Created compelling data visualizations and interactive
+                dashboards using SQL and Tableau. Focused on effective data
+                storytelling and conveying insights to stakeholders.
+              </p>
+              <div class="preview-section">
+                <div class="preview-label">Preview:</div>
+                <div class="preview-content">
+                  📊 Interactive Dashboards • 📈 Visual Insights • 🗣️ Data
+                  Storytelling
+                </div>
+              </div>
+              <div class="highlights-section">
+                <div class="preview-label">Key Highlights:</div>
+                <div class="highlights-grid">
+                  <span class="highlight-tag"
+                    >Designed executive-level dashboards</span
+                  >
+                  <span class="highlight-tag">Improved data accessibility</span>
+                  <span class="highlight-tag"
+                    >Supported strategic decision-making</span
+                  >
+                </div>
+              </div>
+              <div class="tools-section">
+                <div class="preview-label">Tools Used:</div>
+                <div class="tools-grid">
+                  <span class="tool-tag">SQL</span>
+                  <span class="tool-tag">Tableau</span>
+                  <span class="tool-tag">Dashboard Design</span>
+                  <span class="tool-tag">Data Storytelling</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-view" data-project-id="9">
+                  <i data-lucide="eye"></i>
+                  View Details
+                </button>
+                <button class="btn btn-sm btn-download">
+                  <i data-lucide="download"></i>
+                  GitHub Repo
+                </button>
+                <button class="btn btn-sm btn-external">
+                  <i data-lucide="external-link"></i>
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ########## PROJECT END ########## -->
+          <div class="project-card" data-category="sql" data-id="10">
+            <!-- ########## PROJECT START ########## -->
+
+            <div class="project-card-content">
+              <div class="project-header">
+                <div class="project-info">
+                  <h3 class="project-title">
+                    Advanced Data Acquisition - D211
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-type">Advanced Data Engineering</span>
+                    <span class="project-date">2024</span>
+                  </div>
+                </div>
+                <div class="project-icon">🔗</div>
+              </div>
+              <p class="project-description">
+                Explored advanced techniques for data acquisition and
+                integration, including complex SQL queries, API data retrieval,
+                and preparing data for large-scale analysis in Tableau.
+              </p>
+              <div class="preview-section">
+                <div class="preview-label">Preview:</div>
+                <div class="preview-content">
+                  ⚙️ ETL Pipelines • 📦 Complex Data Sources • 🌐 API
+                  Integration
+                </div>
+              </div>
+              <div class="highlights-section">
+                <div class="preview-label">Key Highlights:</div>
+                <div class="highlights-grid">
+                  <span class="highlight-tag">Automated data pipelines</span>
+                  <span class="highlight-tag"
+                    >Managed diverse data formats</span
+                  >
+                  <span class="highlight-tag"
+                    >Ensured data quality for BI tools</span
+                  >
+                </div>
+              </div>
+              <div class="tools-section">
+                <div class="preview-label">Tools Used:</div>
+                <div class="tools-grid">
+                  <span class="tool-tag">PostgreSQL</span>
+                  <span class="tool-tag">pgAdmin 4</span>
+                  <span class="tool-tag">Tableau</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-view" data-project-id="10">
+                  <i data-lucide="eye"></i>
+                  View Details
+                </button>
+                <button class="btn btn-sm btn-download">
+                  <i data-lucide="download"></i>
+                  <a href="https://public.tableau.com/app/profile/tyson.biegler3702/viz/Dashboard_D211V2/ExecutiveDashboard?publish=yes">Live Demo</a>
+                </button>
+                <button class="btn btn-sm btn-external" style="display: none">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ########## PROJECT END ########## -->
+          <div
+            class="project-card"
+            data-category="machine_learning"
+            data-id="11"
+          >
+            <!-- ########## PROJECT START ########## -->
+
+            <div class="project-card-content">
+              <div class="project-header">
+                <div class="project-info">
+                  <h3 class="project-title">Data Mining 2 - D212</h3>
+                  <div class="project-meta">
+                    <span class="project-type">Advanced Data Mining</span>
+                    <span class="project-date">2024</span>
+                  </div>
+                </div>
+                <div class="project-icon">💎</div>
+              </div>
+              <p class="project-description">
+                Applied advanced data mining techniques including K-Means
+                Clustering, Principal Component Analysis (PCA) for feature
+                extraction, and Market Basket Analysis to discover hidden
+                patterns.
+              </p>
+              <div class="preview-section">
+                <div class="preview-label">Preview:</div>
+                <div class="preview-content">
+                  🛒 Market Basket • 🧩 Clustering • 📈 Feature Engineering
+                </div>
+              </div>
+              <div class="highlights-section">
+                <div class="preview-label">Key Highlights:</div>
+                <div class="highlights-grid">
+                  <span class="highlight-tag"
+                    >Segmented customer behavior effectively</span
+                  >
+                  <span class="highlight-tag"
+                    >Identified optimal product placements</span
+                  >
+                  <span class="highlight-tag"
+                    >Reduced data dimensionality for insights</span
+                  >
+                </div>
+              </div>
+              <div class="tools-section">
+                <div class="preview-label">Tools Used:</div>
+                <div class="tools-grid">
+                  <span class="tool-tag">Python</span>
+                  <span class="tool-tag">Scikit-learn</span>
+                  <span class="tool-tag">K-Means</span>
+                  <span class="tool-tag">PCA</span>
+                  <span class="tool-tag">Market Basket Analysis</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-view" data-project-id="11">
+                  <i data-lucide="eye"></i>
+                  View Details
+                </button>
+                <button class="btn btn-sm btn-download">
+                  <i data-lucide="download"></i>
+                  GitHub Repo
+                </button>
+                <button class="btn btn-sm btn-external" style="display: none">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ########## PROJECT END ########## -->
+          <div
+            class="project-card"
+            data-category="machine_learning"
+            data-id="12"
+          >
+            <!-- ########## PROJECT START ########## -->
+
+            <div class="project-card-content">
+              <div class="project-header">
+                <div class="project-info">
+                  <h3 class="project-title">Advanced Data Analytics - D213</h3>
+                  <div class="project-meta">
+                    <span class="project-type"
+                      >Time Series & Text Analysis</span
+                    >
+                    <span class="project-date">2024</span>
+                  </div>
+                </div>
+                <div class="project-icon">🔮</div>
+              </div>
+              <p class="project-description">
+                Engaged in time series modeling for forecasting and sentiment
+                analysis using neural networks. Focused on predictive accuracy
+                and interpreting complex model outputs.
+              </p>
+              <div class="preview-section">
+                <div class="preview-label">Preview:</div>
+                <div class="preview-content">
+                  ⏱️ Time Series • 💬 Sentiment Analysis • 🧠 Neural Networks
+                </div>
+              </div>
+              <div class="highlights-section">
+                <div class="preview-label">Key Highlights:</div>
+                <div class="highlights-grid">
+                  <span class="highlight-tag"
+                    >Developed robust forecasting models</span
+                  >
+                  <span class="highlight-tag"
+                    >Analyzed text data for sentiment trends</span
+                  >
+                  <span class="highlight-tag"
+                    >Applied deep learning techniques</span
+                  >
+                </div>
+              </div>
+              <div class="tools-section">
+                <div class="preview-label">Tools Used:</div>
+                <div class="tools-grid">
+                  <span class="tool-tag">Python</span>
+                  <span class="tool-tag">TensorFlow</span>
+                  <span class="tool-tag">Time Series</span>
+                  <span class="tool-tag">Sentiment Analysis</span>
+                  <span class="tool-tag">Neural Networks</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-view" data-project-id="12">
+                  <i data-lucide="eye"></i>
+                  View Details
+                </button>
+                <button class="btn btn-sm btn-download">
+                  <i data-lucide="download"></i>
+                  GitHub Repo
+                </button>
+                <button class="btn btn-sm btn-external" style="display: none">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ########## PROJECT END ########## -->
+          <div class="project-card" data-category="foundations" data-id="13">
+            <!-- ########## PROJECT START ########## -->
+            <div class="project-card-content">
+              <div class="project-header">
+                <div class="project-info">
+                  <h3 class="project-title">
+                    Data Analytics Graduate Capstone - D214
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-type">Capstone Project</span>
+                    <span class="project-date">2025</span>
+                  </div>
+                </div>
+                <div class="project-icon">🌟</div>
+              </div>
+              <p class="project-description">
+                The culminating project of the Master's
+                program, integrating all learned skills into a comprehensive
+                data analytics solution.
+              </p>
+              <div class="preview-section">
+                <div class="preview-label">Preview:</div>
+                <div class="preview-content">
+                  🎓 Prophet Time Series Model • 🚀 Real-world Application • ✨
+                  Innovation
+                </div>
+              </div>
+              <div class="highlights-section">
+                <div class="preview-label">Key Highlights:</div>
+                <div class="highlights-grid">
+                  <span class="highlight-tag">Integrates all core competencies</span>
+                  <span class="highlight-tag">Addresses a complex business problem</span>
+                  <span class="highlight-tag">Delivers actionable insights</span>
+                </div>
+              </div>
+              <div class="tools-section">
+                <div class="preview-label">Tools Used:</div>
+                <div class="tools-grid">
+                  <span class="tool-tag"
+                    >Various tools based on project scope</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-view" data-project-id="13">
+                  <i data-lucide="eye"></i>
+                  View Details
+                </button>
+                <button class="btn btn-sm btn-download" style="display: none">
+                  <i data-lucide="download"></i>
+                  GitHub Repo
+                </button>
+                <button class="btn btn-sm btn-external" style="display: none">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about-section">
       <div class="container">
         <div class="about-grid">
           <div class="about-content">
             <h2 class="section-title">About My Studies</h2>
             <p class="about-text">
-              Currently pursuing a Master's degree with a focus on data science
-              and analytics. My coursework encompasses statistical analysis,
+              I'm a recent graduate with a <b>Master of Science in Data Analytics</b>. My coursework encompasses statistical analysis,
               machine learning, database design, and business intelligence
               solutions.
             </p>
@@ -129,12 +789,13 @@
             </p>
             <div class="stats-grid">
               <div class="stat-card stat-blue">
-                <div class="stat-number">15+</div>
+                <div class="stat-number">10+</div>
                 <div class="stat-label">Projects Completed</div>
               </div>
               <div class="stat-card stat-green">
                 <div class="stat-number">3.0</div>
-                <div class="stat-label">GPA</div>
+                <div class="stat-label"> (<i>Competency Based</i>) <br> GPA</div>
+
               </div>
             </div>
           </div>
@@ -171,7 +832,6 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <div class="container">
         <div class="section-header">
@@ -194,21 +854,19 @@
           <div class="contact-card">
             <i data-lucide="map-pin"></i>
             <h3>Location</h3>
-            <p>Wilsonville, OR</p>
+            <p>Portland, Oregon</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="footer-content">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Tyson Biegler. All rights reserved.</p>
         <p class="footer-subtitle">Master's Degree Portfolio</p>
       </div>
     </footer>
 
-    <!-- Project Modal -->
     <div id="projectModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
@@ -239,11 +897,11 @@
             </div>
           </div>
           <div class="modal-actions">
-            <button class="btn btn-primary">
+            <button class="btn btn-primary" id="modalDownloadBtn">
               <i data-lucide="download"></i>
               Download Project
             </button>
-            <button class="btn btn-secondary">
+            <button class="btn btn-secondary" id="modalDemoBtn">
               <i data-lucide="external-link"></i>
               View Live Demo
             </button>
@@ -253,6 +911,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
