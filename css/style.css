@@ -44,7 +44,7 @@ body {
   gap: 0.75rem;
 }
 
-.header-icon {
+/* .header-icon {
   width: 40px;
   height: 40px;
   border-radius: 8px;
@@ -52,9 +52,9 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-}
+} */
 
-.header-icon .logo {
+.logo {
   width: 35px;
 }
 
