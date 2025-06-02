@@ -1,4 +1,3 @@
-// Project data (still needed for modal content)
 const projects = [
   {
     id: 4,
