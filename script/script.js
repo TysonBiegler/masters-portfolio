@@ -217,7 +217,7 @@ const projects = [
     category: "foundations", // Placeholder, change once details are known
     type: "Capstone Project",
     description:
-      "**Coming Soon:** The culminating project of the Master's program, integrating all learned skills into a comprehensive data analytics solution. (Details to be updated upon completion).",
+      "The culminating project of the Master's program, integrating all learned skills into a comprehensive data analytics solution. (Details to be updated upon completion).",
     date: "Expected 2025",
     tools: ["Various tools based on project scope"],
     fileType: "Project Report / Presentation",
@@ -345,8 +345,7 @@ function setupEventListeners() {
 
   if (downloadResumeBtn) {
     downloadResumeBtn.addEventListener("click", function () {
-      alert("Resume download would be implemented here");
-      // window.open('path/to/your/resume.pdf', '_blank'); // Uncomment and update path
+      window.open("Files/Tyson Biegler Resume.docx.pdf", "_blank");
     });
   }
 
